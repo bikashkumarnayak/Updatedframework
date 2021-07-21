@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="com.listiner.Listener" />
+		<!-- Below is custom annotation listener -->
+		<!-- <listener class-name="org.automation.listeners.AnnotationTransformer"/> -->
+	</listeners>
+  <test thread-count="1" name="Test">
+    <classes>
+      <class name="com.tranzack.Airface"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
